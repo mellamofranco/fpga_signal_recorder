@@ -1,0 +1,12 @@
+vlib work
+vcom  Subsystem_pkg.vhd
+vcom  detector_flancos.vhd
+vcom  detector_flancos1.vhd
+vcom  Difference.vhd
+vcom  generador_pulsos_ad.vhd
+vcom  reloj_sicnronizador.vhd
+vcom  contador_mem_rd.vhd
+vcom  contador_mem_wr.vhd
+vcom  rconversor_uart_uint.vhd
+vcom  SimpleDualPortRAM_generic.vhd
+vcom  Subsystem.vhd

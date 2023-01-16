@@ -1,0 +1,11 @@
+ --> Subsystem_pkg
+main/Subsystem/detector_flancos --> detector_flancos
+main/Subsystem/detector_flancos1 --> detector_flancos1
+main/Subsystem/generador_pulsos_ad/Difference --> Difference
+main/Subsystem/generador_pulsos_ad --> generador_pulsos_ad
+main/Subsystem/reloj_sicnronizador --> reloj_sicnronizador
+main/Subsystem/contador_mem_rd --> contador_mem_rd
+main/Subsystem/contador_mem_wr --> contador_mem_wr
+main/Subsystem/rconversor_uart_uint --> rconversor_uart_uint
+main/Subsystem/SimpleDualPortRAM_generic --> SimpleDualPortRAM_generic
+main/Subsystem --> Subsystem

@@ -1,0 +1,384 @@
+Task "Run Synthesis" successful.
+Generated logfile: 
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source Subsystem_Xilinx_Vivado_run.tcl -notrace
+### Open existing Xilinx Vivado 2022.2 project tp_vivado\vivado_prj\Subsystem_vivado.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/vivado_prj/Subsystem_vivado.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 415.695 ; gain = 91.387
+### Running Synthesis in Xilinx Vivado 2022.2 ...
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Fri Dec  9 14:11:41 2022] Launched synth_1...
+Run output will be captured here: D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/vivado_prj/Subsystem_vivado.runs/synth_1/runme.log
+[Fri Dec  9 14:11:41 2022] Waiting for synth_1 to finish...
+
+
+*** Running vivado
+    with args -log Subsystem.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Subsystem.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source Subsystem.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 393.961 ; gain = 67.883
+Command: synth_design -top Subsystem -part xa7a100tcsg324-1I -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xa7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xa7a100t'
+INFO: [Device 21-403] Loading part xa7a100tcsg324-1I
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9836
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1218.605 ; gain = 407.285
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Subsystem' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/Subsystem.vhd:56]
+INFO: [Synth 8-3491] module 'detector_flancos' declared at 'D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/detector_flancos.vhd:22' bound to instance 'u_detector_flancos' of component 'detector_flancos' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/Subsystem.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'detector_flancos' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/detector_flancos.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'detector_flancos' (0#1) [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/detector_flancos.vhd:32]
+INFO: [Synth 8-3491] module 'rconversor_uart_uint' declared at 'D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/rconversor_uart_uint.vhd:23' bound to instance 'u_rconversor_uart_uint' of component 'rconversor_uart_uint' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/Subsystem.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'rconversor_uart_uint' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/rconversor_uart_uint.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'rconversor_uart_uint' (0#1) [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/rconversor_uart_uint.vhd:37]
+INFO: [Synth 8-3491] module 'detector_flancos1' declared at 'D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/detector_flancos1.vhd:22' bound to instance 'u_detector_flancos1' of component 'detector_flancos1' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/Subsystem.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'detector_flancos1' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/detector_flancos1.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'detector_flancos1' (0#1) [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/detector_flancos1.vhd:32]
+INFO: [Synth 8-3491] module 'contador_mem_wr' declared at 'D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/contador_mem_wr.vhd:23' bound to instance 'u_contador_mem_wr' of component 'contador_mem_wr' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/Subsystem.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'contador_mem_wr' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/contador_mem_wr.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'contador_mem_wr' (0#1) [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/contador_mem_wr.vhd:34]
+INFO: [Synth 8-3491] module 'reloj_sicnronizador' declared at 'D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/reloj_sicnronizador.vhd:22' bound to instance 'u_reloj_sicnronizador' of component 'reloj_sicnronizador' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/Subsystem.vhd:233]
+INFO: [Synth 8-638] synthesizing module 'reloj_sicnronizador' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/reloj_sicnronizador.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'reloj_sicnronizador' (0#1) [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/reloj_sicnronizador.vhd:34]
+INFO: [Synth 8-3491] module 'contador_mem_rd' declared at 'D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/contador_mem_rd.vhd:23' bound to instance 'u_contador_mem_rd' of component 'contador_mem_rd' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/Subsystem.vhd:243]
+INFO: [Synth 8-638] synthesizing module 'contador_mem_rd' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/contador_mem_rd.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'contador_mem_rd' (0#1) [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/contador_mem_rd.vhd:35]
+	Parameter AddrWidth bound to: 8 - type: integer 
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'SimpleDualPortRAM_generic' declared at 'D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/SimpleDualPortRAM_generic.vhd:22' bound to instance 'u_Simple_Dual_Port_RAM' of component 'SimpleDualPortRAM_generic' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/Subsystem.vhd:253]
+INFO: [Synth 8-638] synthesizing module 'SimpleDualPortRAM_generic' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/SimpleDualPortRAM_generic.vhd:37]
+	Parameter AddrWidth bound to: 8 - type: integer 
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SimpleDualPortRAM_generic' (0#1) [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/SimpleDualPortRAM_generic.vhd:37]
+INFO: [Synth 8-3491] module 'generador_pulsos_ad' declared at 'D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/generador_pulsos_ad.vhd:22' bound to instance 'u_generador_pulsos_ad' of component 'generador_pulsos_ad' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/Subsystem.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'generador_pulsos_ad' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/generador_pulsos_ad.vhd:32]
+INFO: [Synth 8-3491] module 'Difference' declared at 'D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/Difference.vhd:22' bound to instance 'u_Difference' of component 'Difference' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/generador_pulsos_ad.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'Difference' [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/Difference.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'Difference' (0#1) [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/Difference.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'generador_pulsos_ad' (0#1) [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/generador_pulsos_ad.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'Subsystem' (0#1) [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/Subsystem.vhd:56]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1310.188 ; gain = 498.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1310.188 ; gain = 498.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1310.188 ; gain = 498.867
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1310.188 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/clock_constraint.xdc]
+Finished Parsing XDC File [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/clock_constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1362.488 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.259 . Memory (MB): peak = 1363.148 ; gain = 0.660
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1363.148 ; gain = 551.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xa7a100tcsg324-1I
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1363.148 ; gain = 551.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1363.148 ; gain = 551.828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'is_rconversor_uart_uint_reg' in module 'rconversor_uart_uint'
+INFO: [Synth 8-802] inferred FSM for state register 'is_contador_mem_wr_reg' in module 'contador_mem_wr'
+INFO: [Synth 8-802] inferred FSM for state register 'is_contador_mem_rd_reg' in module 'contador_mem_rd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             in_e_inicio |                              000 |                              011
+             in_e_espera |                              001 |                              000
+            in_e_espera2 |                              010 |                              001
+                  iSTATE |                              011 |                              101
+*
+                in_e_fin |                              100 |                              010
+             in_e_reposo |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'is_rconversor_uart_uint_reg' using encoding 'sequential' in module 'rconversor_uart_uint'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               11
+*
+               in_espera |                               01 |                               00
+           in_incrementa |                               10 |                               10
+                in_reset |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'is_contador_mem_wr_reg' using encoding 'sequential' in module 'contador_mem_wr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               11
+*
+               in_espera |                               01 |                               00
+           in_incrementa |                               10 |                               10
+                in_reset |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'is_contador_mem_rd_reg' using encoding 'sequential' in module 'contador_mem_rd'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1363.148 ; gain = 551.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 2     
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 7     
+	                1 Bit    Registers := 10    
++---RAMs : 
+	               2K Bit	(256 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 6     
+	   6 Input   16 Bit        Muxes := 3     
+	   6 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 6     
+	   4 Input    8 Bit        Muxes := 4     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1363.148 ; gain = 551.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Subsystem   | u_Simple_Dual_Port_RAM/ram_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1363.148 ; gain = 551.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1363.148 ; gain = 551.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Subsystem   | u_Simple_Dual_Port_RAM/ram_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u_Simple_Dual_Port_RAM/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1363.148 ; gain = 551.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1363.148 ; gain = 551.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1363.148 ; gain = 551.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1363.148 ; gain = 551.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1363.148 ; gain = 551.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1363.148 ; gain = 551.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1363.148 ; gain = 551.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    18|
+|2     |LUT1     |     1|
+|3     |LUT2     |    48|
+|4     |LUT3     |    55|
+|5     |LUT4     |    15|
+|6     |LUT5     |    15|
+|7     |LUT6     |    68|
+|8     |RAMB18E1 |     1|
+|9     |FDCE     |   111|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1363.148 ; gain = 551.828
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:34 . Memory (MB): peak = 1363.148 ; gain = 498.867
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1363.148 ; gain = 551.828
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1363.148 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1363.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 4717bf46
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 1363.148 ; gain = 969.188
+INFO: [Common 17-1381] The checkpoint 'D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/vivado_prj/Subsystem_vivado.runs/synth_1/Subsystem.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Subsystem_utilization_synth.rpt -pb Subsystem_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  9 14:12:38 2022...
+[Fri Dec  9 14:12:41 2022] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:01:01 . Memory (MB): peak = 419.754 ; gain = 0.000
+### Synthesis Complete.
+### Running PostMapTiming in Xilinx Vivado 2022.2 ...
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xa7a100tcsg324-1I
+INFO: [Device 21-403] Loading part xa7a100tcsg324-1I
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 815.348 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/clock_constraint.xdc]
+Finished Parsing XDC File [D:/documentos_Fran/facultad/master/03 LANAI - lenguajes de Alto Nivel para Aplicaciones  Industriales/tp/tp_vivado/hdlsrc/main/clock_constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 943.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 947.547 ; gain = 527.793
+WARNING: [Common 17-708] report_timing_summary: The '-name' option will be ignored because it is only relevant in GUI mode.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1415.906 ; gain = 468.359
+### PostMapTiming Complete.
+### Close Xilinx Vivado 2022.2 project.
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  9 14:12:57 2022...
+
+Elapsed time is 89.2689 seconds.
